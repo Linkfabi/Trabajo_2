@@ -50,9 +50,16 @@
     <Compile Include="DAL\MedidorConsumoDALFactory.cs" />
     <Compile Include="DAL\MedidorTraficoDALArchivos.cs" />
     <Compile Include="DAL\MedidorTraficoDALFactory.cs" />
+    <Compile Include="DTO\Estacion.cs" />
+    <Compile Include="DTO\HistoricoConsumo.cs" />
+    <Compile Include="DTO\HistoricoTrafico.cs" />
     <Compile Include="DTO\Medidor.cs" />
     <Compile Include="DTO\MedidorConsumo.cs" />
     <Compile Include="DTO\MedidorTrafico.cs" />
+    <Compile Include="DTO\PuntoDeCarga.cs" />
+    <Compile Include="DTO\Region.cs" />
+    <Compile Include="DTO\ValorElectricidad.cs" />
+    <Compile Include="DTO\ZonaHoraria.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
