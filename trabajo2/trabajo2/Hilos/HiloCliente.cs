@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Globalization;
+using Newtonsoft.Json;
 
 namespace trabajo2.Hilos
 {
@@ -119,7 +120,7 @@ namespace trabajo2.Hilos
                             n.NroSerie = id;
 
                             lock (dal)
-                            {
+                            {                                
                                 dal.RegistrarLecturaConsumo(n);
                             }
                             clienteSocket.Escribir(id + "|" + "OK");

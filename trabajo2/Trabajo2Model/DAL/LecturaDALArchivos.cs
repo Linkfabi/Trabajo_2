@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -113,8 +114,8 @@ namespace Trabajo2Model.DAL
             try
             {
                 using (StreamWriter writer = new StreamWriter(consumoTxt, true))
-                {
-                    writer.WriteLine(m);
+                {                    
+                    writer.WriteLine(JsonConvert.SerializeObject(m));
                     writer.Flush();
                 }
             }
@@ -130,8 +131,8 @@ namespace Trabajo2Model.DAL
             try
             {
                 using (StreamWriter writer = new StreamWriter(traficoTxt, true))
-                {
-                    writer.WriteLine(m);
+                {                    
+                    writer.WriteLine(JsonConvert.SerializeObject(m));
                     writer.Flush();
                 }
             }
